@@ -32,35 +32,35 @@ class RealmSwiftTutorialTests: XCTestCase {
         XCTAssertTrue(addModelTest, "add second model is success")
     }
     
-    func testGetStDataFromDatabase() {
-        let modelTest = TaskModel(value: ["text": "test", "id": "1"])
-        guard let models = RealmDatabase.shareInstance.get(type: TaskModel.self) else { XCTFail(); return}
-        var modelList: [TaskModel] = []
-        for i in models {
-            modelList.append(i)
-        }
-        XCTAssertEqual(models[0], modelTest, "get first data test")
-    }
-
-    func testCountOfTask() {
-        let count = RealmDatabase.shareInstance.get(type: TaskModel.self)
-        XCTAssertEqual(2, count?.count ?? -1, "count of data in database is two")
-    }
-    
-    func testEditNdData() {
-        let ndModel = RealmDatabase.shareInstance.get(type: TaskModel.self, key: "2")
-        let modelTest = TaskModel(value: ["text": "text edit", "id": "2"])
-        
-        do {
-            try RealmDatabase.shareInstance.realm.write {
-                ndModel?.text = "text edit"
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        let newModelFromDb = RealmDatabase.shareInstance.get(type: TaskModel.self, key: "2")
-        XCTAssertEqual(newModelFromDb, modelTest, "Edit Data is success")
-        
-    }
+//    func testGetStDataFromDatabase() {
+//        let modelTest = TaskModel(value: ["text": "test", "id": "1"])
+//        guard let models = RealmDatabase.shareInstance.get(type: TaskModel.self) else { XCTFail(); return}
+//        var modelList: [TaskModel] = []
+//        for i in models {
+//            modelList.append(i)
+//        }
+//        XCTAssertEqual(models[0], modelTest, "get first data test")
+//    }
+//
+//    func testCountOfTask() {
+//        let count = RealmDatabase.shareInstance.get(type: TaskModel.self)
+//        XCTAssertEqual(2, count?.count ?? -1, "count of data in database is two")
+//    }
+//
+//    func testEditNdData() {
+//        let ndModel = RealmDatabase.shareInstance.get(type: TaskModel.self, key: "2")
+//        let modelTest = TaskModel(value: ["text": "text edit", "id": "2"])
+//
+//        do {
+//            try RealmDatabase.shareInstance.realm.write {
+//                ndModel?.text = "text edit"
+//            }
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//
+//        let newModelFromDb = RealmDatabase.shareInstance.get(type: TaskModel.self, key: "2")
+//        XCTAssertEqual(newModelFromDb, modelTest, "Edit Data is success")
+//
+//    }
 }
