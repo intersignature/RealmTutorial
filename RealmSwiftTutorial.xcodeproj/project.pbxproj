@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3511E50B240E1B3800FAA1FA /* RealmSwiftTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511E50A240E1B3800FAA1FA /* RealmSwiftTutorialTests.swift */; };
+		3511E512240E57B500FAA1FA /* RealmDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDEC1C240D002D00B6B29E /* RealmDatabase.swift */; };
 		35BDEC02240CC3D700B6B29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDEC01240CC3D700B6B29E /* AppDelegate.swift */; };
 		35BDEC09240CC3D700B6B29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35BDEC07240CC3D700B6B29E /* Main.storyboard */; };
 		35BDEC0B240CC3D800B6B29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35BDEC0A240CC3D800B6B29E /* Assets.xcassets */; };
@@ -331,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3511E512240E57B500FAA1FA /* RealmDatabase.swift in Sources */,
 				3511E50B240E1B3800FAA1FA /* RealmSwiftTutorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
