@@ -460,6 +460,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"${TARGET_BUILD_DIR}/Pods_RealmSwiftTutorial.framework",
 					"${TARGET_BUILD_DIR}/Pods_RealmSwiftTutorialTests.framework",
+					"${PODS_CONFIGURATION_BUILD_DIR}/Realm",
+					"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift",
+					"$(inherited)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -524,6 +527,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"${TARGET_BUILD_DIR}/Pods_RealmSwiftTutorial.framework",
 					"${TARGET_BUILD_DIR}/Pods_RealmSwiftTutorialTests.framework",
+					"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift",
+					"${PODS_CONFIGURATION_BUILD_DIR}/Realm",
+					"$(inherited)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
