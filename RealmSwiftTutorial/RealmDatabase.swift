@@ -24,6 +24,16 @@ class RealmDatabase {
         }
     }
     
+    func clear() {
+        do {
+            try realm.write {
+                realm.deleteAll()
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     // MARK - Create
     func save(object: Object) -> Bool {
         do {
