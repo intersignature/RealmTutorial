@@ -7,4 +7,11 @@ target 'RealmSwiftTutorial' do
 
   # Pods for RealmSwiftTutorial
   pod ‘RealmSwift’
+  
+  target 'RealmSwiftTutorialTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod ‘RealmSwift’
+  end
+  
 end
