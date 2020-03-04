@@ -30,7 +30,7 @@ class RealmSwiftTutorialTests: XCTestCase {
         
         let model = TaskModel(value: ["text": "test2", "id": "2"])
         let addModelTest = RealmDatabase.shareInstance.save(object: model)
-        XCTAssertTrue(addModelTest, "add second model is success")
+        XCTAssertTrue(addModelTest, "add second model is success for email test")
     }
     
 //    func testGetStDataFromDatabase() {
