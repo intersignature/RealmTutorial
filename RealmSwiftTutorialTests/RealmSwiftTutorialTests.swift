@@ -33,15 +33,15 @@ class RealmSwiftTutorialTests: XCTestCase {
         XCTAssertTrue(addModelTest, "add second model is success web")
     }
     
-    func testGetStDataFromDatabase() {
-        let modelTest = TaskModel(value: ["text": "test", "id": "1"])
-        guard let models = RealmDatabase.shareInstance.get(type: TaskModel.self) else { XCTFail(); return}
-        var modelList: [TaskModel] = []
-        for i in models {
-            modelList.append(i)
-        }
-        XCTAssertEqual(models[0], modelTest, "get first data test")
-    }
+//    func testGetStDataFromDatabase() {
+//        let modelTest = TaskModel(value: ["text": "test", "id": "1"])
+//        guard let models = RealmDatabase.shareInstance.get(type: TaskModel.self) else { XCTFail(); return}
+//        var modelList: [TaskModel] = []
+//        for i in models {
+//            modelList.append(i)
+//        }
+//        XCTAssertEqual(models[0], modelTest, "get first data test")
+//    }
 //
 //    func testCountOfTask() {
 //        let count = RealmDatabase.shareInstance.get(type: TaskModel.self)
